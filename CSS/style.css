@@ -202,16 +202,16 @@ body {
 /* line 250, ../SCSS/style.scss */
 .container-feedback {
   width: 100%;
-  height: auto;
-  margin-top: 5rem;
-  margin-bottom: 7rem;
+  height: 410px;
+  margin-top: 10rem;
   background-image: url(../IMG/bg-quotes.png);
   background-repeat: no-repeat;
   background-position: top 12% left 8%; }
-  /* line 260, ../SCSS/style.scss */
+  /* line 259, ../SCSS/style.scss */
   .container-feedback .container-feedback-grid {
     width: 100%;
-    padding: 5rem 8rem;
+    height: 100%;
+    padding: 4rem 8rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "feedback1 feedback2 feedback3";
@@ -220,81 +220,157 @@ body {
     /* line 269, ../SCSS/style.scss */
     .container-feedback .container-feedback-grid .feedback-1 {
       grid-area: feedback1;
-      padding: 3rem 2rem 2rem 2rem;
-      background-color: #202a3c; }
+      perspective: 150rem;
+      position: relative; }
       /* line 274, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-1-side {
+        padding: 3rem 2rem 2rem 2rem;
+        background-color: #202a3c;
+        transition: all 0.8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden; }
+        /* line 284, ../SCSS/style.scss */
+        .container-feedback .container-feedback-grid .feedback-1-side--front {
+          transform: rotateY(0); }
+        /* line 287, ../SCSS/style.scss */
+        .container-feedback .container-feedback-grid .feedback-1-side--back {
+          transform: rotateY(180deg); }
+      /* line 292, ../SCSS/style.scss */
       .container-feedback .container-feedback-grid .feedback-1 p {
         margin-bottom: 1.5rem; }
-      /* line 278, ../SCSS/style.scss */
+      /* line 296, ../SCSS/style.scss */
       .container-feedback .container-feedback-grid .feedback-1 .profile {
         display: inline-block;
         margin-left: 1rem; }
-        /* line 282, ../SCSS/style.scss */
+        /* line 300, ../SCSS/style.scss */
         .container-feedback .container-feedback-grid .feedback-1 .profile .p-p {
           margin-bottom: 0; }
-      /* line 287, ../SCSS/style.scss */
-      .container-feedback .container-feedback-grid .feedback-1 img {
+      /* line 305, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-1 .img-front {
         width: 40px;
         height: 40px;
         border-radius: 50%;
         float: left; }
-    /* line 295, ../SCSS/style.scss */
+      /* line 311, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-1 .img-back {
+        width: 100%; }
+      /* line 314, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-1:hover .feedback-1-side--front {
+        transform: rotateY(-180deg); }
+      /* line 317, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-1:hover .feedback-1-side--back {
+        transform: rotateY(0); }
+    /* line 322, ../SCSS/style.scss */
     .container-feedback .container-feedback-grid .feedback-2 {
       grid-area: feedback2;
-      padding: 3rem 2rem 2rem 2rem;
-      background-color: #202a3c; }
-      /* line 300, ../SCSS/style.scss */
+      perspective: 150rem;
+      position: relative; }
+      /* line 327, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-2-side {
+        padding: 3rem 2rem 2rem 2rem;
+        background-color: #202a3c;
+        transition: all 0.8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden; }
+        /* line 337, ../SCSS/style.scss */
+        .container-feedback .container-feedback-grid .feedback-2-side--front {
+          transform: rotateY(0); }
+        /* line 340, ../SCSS/style.scss */
+        .container-feedback .container-feedback-grid .feedback-2-side--back {
+          transform: rotateY(180deg); }
+      /* line 345, ../SCSS/style.scss */
       .container-feedback .container-feedback-grid .feedback-2 p {
         margin-bottom: 1.5rem; }
-      /* line 304, ../SCSS/style.scss */
+      /* line 349, ../SCSS/style.scss */
       .container-feedback .container-feedback-grid .feedback-2 .profile {
         display: inline-block;
         margin-left: 1rem; }
-        /* line 308, ../SCSS/style.scss */
+        /* line 353, ../SCSS/style.scss */
         .container-feedback .container-feedback-grid .feedback-2 .profile .p-p {
           margin-bottom: 0; }
-      /* line 313, ../SCSS/style.scss */
-      .container-feedback .container-feedback-grid .feedback-2 img {
+      /* line 358, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-2 .img-front {
         width: 40px;
         height: 40px;
         border-radius: 50%;
         float: left; }
-    /* line 321, ../SCSS/style.scss */
+      /* line 364, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-2 .img-back {
+        width: 100%; }
+      /* line 367, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-2:hover .feedback-2-side--front {
+        transform: rotateY(-180deg); }
+      /* line 370, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-2:hover .feedback-2-side--back {
+        transform: rotateY(0); }
+    /* line 375, ../SCSS/style.scss */
     .container-feedback .container-feedback-grid .feedback-3 {
       grid-area: feedback3;
-      padding: 3rem 2rem 2rem 2rem;
-      background-color: #202a3c; }
-      /* line 326, ../SCSS/style.scss */
+      perspective: 150rem;
+      position: relative; }
+      /* line 380, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-3-side {
+        padding: 3rem 2rem 2rem 2rem;
+        background-color: #202a3c;
+        transition: all 0.8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden; }
+        /* line 390, ../SCSS/style.scss */
+        .container-feedback .container-feedback-grid .feedback-3-side--front {
+          transform: rotateY(0); }
+        /* line 393, ../SCSS/style.scss */
+        .container-feedback .container-feedback-grid .feedback-3-side--back {
+          transform: rotateY(180deg); }
+      /* line 398, ../SCSS/style.scss */
       .container-feedback .container-feedback-grid .feedback-3 p {
         margin-bottom: 1.5rem; }
-      /* line 330, ../SCSS/style.scss */
+      /* line 402, ../SCSS/style.scss */
       .container-feedback .container-feedback-grid .feedback-3 .profile {
         display: inline-block;
         margin-left: 1rem; }
-        /* line 334, ../SCSS/style.scss */
+        /* line 406, ../SCSS/style.scss */
         .container-feedback .container-feedback-grid .feedback-3 .profile .p-p {
           margin-bottom: 0; }
-      /* line 339, ../SCSS/style.scss */
-      .container-feedback .container-feedback-grid .feedback-3 img {
+      /* line 411, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-3 .img-front {
         width: 40px;
         height: 40px;
         border-radius: 50%;
         float: left; }
+      /* line 417, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-3 .img-back {
+        width: 100%; }
+      /* line 420, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-3:hover .feedback-3-side--front {
+        transform: rotateY(-180deg); }
+      /* line 423, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .feedback-3:hover .feedback-3-side--back {
+        transform: rotateY(0); }
 
-/* line 351, ../SCSS/style.scss */
+/* line 432, ../SCSS/style.scss */
 .container-bottom {
   max-width: 900px;
   width: 100%;
   height: auto;
+  top: -9rem;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
   box-shadow: 5px 5px 10px black;
   z-index: 9999; }
-  /* line 361, ../SCSS/style.scss */
+  /* line 443, ../SCSS/style.scss */
   .container-bottom h1 {
     margin-bottom: 0.5rem; }
-  /* line 365, ../SCSS/style.scss */
+  /* line 447, ../SCSS/style.scss */
   .container-bottom .container-bottom-grid {
     border-radius: 10px;
     background-color: #1c2431;
@@ -303,29 +379,29 @@ body {
     grid-template-rows: repeat(2);
     grid-template-areas: "text1 text1" "email btn";
     grid-gap: 2rem; }
-    /* line 376, ../SCSS/style.scss */
+    /* line 458, ../SCSS/style.scss */
     .container-bottom .container-bottom-grid .text-bottom {
       margin-top: 2rem;
       grid-area: text1;
       text-align: center; }
-    /* line 382, ../SCSS/style.scss */
+    /* line 464, ../SCSS/style.scss */
     .container-bottom .container-bottom-grid .email-box {
       grid-area: email;
       justify-self: flex-end; }
-      /* line 386, ../SCSS/style.scss */
+      /* line 468, ../SCSS/style.scss */
       .container-bottom .container-bottom-grid .email-box input {
         width: 500px;
         height: 50px;
         outline: none;
         text-align: center;
         border-radius: 30px; }
-      /* line 394, ../SCSS/style.scss */
+      /* line 476, ../SCSS/style.scss */
       .container-bottom .container-bottom-grid .email-box p {
         text-align: left;
         color: #ff4242;
         font-size: 10px;
         margin-left: 2rem; }
-    /* line 402, ../SCSS/style.scss */
+    /* line 484, ../SCSS/style.scss */
     .container-bottom .container-bottom-grid .btn-bottom {
       grid-area: btn;
       justify-self: flex-start;
@@ -333,20 +409,20 @@ body {
       font-family: "Raleway", sans-serif;
       font-weight: 700;
       transition: color 0.5s; }
-      /* line 411, ../SCSS/style.scss */
+      /* line 493, ../SCSS/style.scss */
       .container-bottom .container-bottom-grid .btn-bottom a {
         padding: 1rem 2rem;
         border-radius: 2rem;
         background: linear-gradient(to right, #65e2d9, #339ecc);
         text-decoration: none;
         color: white; }
-    /* line 420, ../SCSS/style.scss */
+    /* line 502, ../SCSS/style.scss */
     .container-bottom .container-bottom-grid .btn-bottom:hover {
       grid-area: btn;
       justify-self: flex-start;
       font-family: "Raleway", sans-serif;
       font-weight: 700; }
-      /* line 427, ../SCSS/style.scss */
+      /* line 509, ../SCSS/style.scss */
       .container-bottom .container-bottom-grid .btn-bottom:hover a {
         padding: 1rem 2rem;
         border-radius: 2rem;
@@ -354,185 +430,193 @@ body {
         text-decoration: none;
         color: white; }
 
-/* line 440, ../SCSS/style.scss */
+/* line 522, ../SCSS/style.scss */
 .container-footer {
   width: 100%;
   height: auto;
   background-color: #0b1523;
   position: relative;
   margin-top: 15rem; }
-  /* line 447, ../SCSS/style.scss */
+  /* line 529, ../SCSS/style.scss */
   .container-footer .container-footer-grid {
     width: 100%;
     height: auto;
-    padding: 10rem 3rem 2rem 7rem;
+    padding: 11rem 3rem 2rem 7rem;
     display: grid;
     grid-template-columns: repeat(4, 30% 25% 25% 20%);
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "logo logo logo logo" "address tel about social";
     grid-gap: 2rem; }
-    /* line 459, ../SCSS/style.scss */
+    /* line 541, ../SCSS/style.scss */
     .container-footer .container-footer-grid .logo-footer {
       grid-area: logo;
       justify-self: flex-start; }
-      /* line 463, ../SCSS/style.scss */
+      /* line 545, ../SCSS/style.scss */
       .container-footer .container-footer-grid .logo-footer img {
         width: 7rem; }
-    /* line 467, ../SCSS/style.scss */
+    /* line 549, ../SCSS/style.scss */
     .container-footer .container-footer-grid .address {
       grid-area: address;
       display: flex; }
-      /* line 471, ../SCSS/style.scss */
+      /* line 553, ../SCSS/style.scss */
       .container-footer .container-footer-grid .address img {
         width: 15px;
         height: 20px;
         margin-top: 10px; }
-      /* line 476, ../SCSS/style.scss */
+      /* line 558, ../SCSS/style.scss */
       .container-footer .container-footer-grid .address p {
         text-align: left;
         margin-left: 1rem;
         font-size: 1rem; }
-    /* line 482, ../SCSS/style.scss */
+    /* line 564, ../SCSS/style.scss */
     .container-footer .container-footer-grid .tel {
       grid-area: tel;
       justify-self: center; }
-      /* line 485, ../SCSS/style.scss */
+      /* line 567, ../SCSS/style.scss */
       .container-footer .container-footer-grid .tel P {
         margin-left: 1.5rem; }
-      /* line 489, ../SCSS/style.scss */
+      /* line 571, ../SCSS/style.scss */
       .container-footer .container-footer-grid .tel .tel-me {
         display: flex; }
-      /* line 492, ../SCSS/style.scss */
+      /* line 574, ../SCSS/style.scss */
       .container-footer .container-footer-grid .tel .email {
         display: flex;
         margin-top: 1rem; }
-    /* line 497, ../SCSS/style.scss */
+    /* line 579, ../SCSS/style.scss */
     .container-footer .container-footer-grid .about {
       grid-area: about;
       justify-self: flex-start;
       display: grid;
       grid-template-columns: repeat(2, 1fr); }
-      /* line 504, ../SCSS/style.scss */
+      /* line 586, ../SCSS/style.scss */
       .container-footer .container-footer-grid .about a {
         text-decoration: none; }
-      /* line 507, ../SCSS/style.scss */
+      /* line 589, ../SCSS/style.scss */
       .container-footer .container-footer-grid .about P {
         color: white;
         margin-left: 1.5rem;
         margin-bottom: 1.1rem;
         transition: color 0.2s; }
-      /* line 514, ../SCSS/style.scss */
+      /* line 596, ../SCSS/style.scss */
       .container-footer .container-footer-grid .about p:hover {
         color: #65e2d9; }
-    /* line 518, ../SCSS/style.scss */
+    /* line 600, ../SCSS/style.scss */
     .container-footer .container-footer-grid .social-logo {
       grid-area: social;
       justify-self: flex-start;
       font-size: 160%; }
-      /* line 523, ../SCSS/style.scss */
+      /* line 605, ../SCSS/style.scss */
+      .container-footer .container-footer-grid .social-logo a {
+        margin-right: 1rem; }
+      /* line 609, ../SCSS/style.scss */
       .container-footer .container-footer-grid .social-logo .ion-social-facebook,
       .container-footer .container-footer-grid .social-logo .ion-social-twitter,
       .container-footer .container-footer-grid .social-logo .ion-social-instagram {
         color: white;
-        margin-right: 1rem;
-        transition: color 0.2s; }
-      /* line 531, ../SCSS/style.scss */
+        transition: color 0.2s;
+        overflow: hidden; }
+      /* line 617, ../SCSS/style.scss */
       .container-footer .container-footer-grid .social-logo .ion-social-facebook:hover {
         color: #3b5998; }
-      /* line 534, ../SCSS/style.scss */
+      /* line 620, ../SCSS/style.scss */
       .container-footer .container-footer-grid .social-logo .ion-social-twitter:hover {
         color: #55acee; }
-      /* line 537, ../SCSS/style.scss */
+      /* line 623, ../SCSS/style.scss */
       .container-footer .container-footer-grid .social-logo .ion-social-instagram:hover {
         color: #e95950; }
 
-/* line 546, ../SCSS/style.scss */
+/* line 632, ../SCSS/style.scss */
 .coded {
   display: flex;
   color: #0b1523;
   text-align: center;
   justify-content: center;
   padding: 1rem 0; }
-  /* line 553, ../SCSS/style.scss */
+  /* line 639, ../SCSS/style.scss */
   .coded a {
     text-decoration: none; }
 
 @media (max-width: 1023px) {
-  /* line 563, ../SCSS/style.scss */
+  /* line 649, ../SCSS/style.scss */
   .container-feedback {
     width: 100%;
     height: auto;
     padding: 2rem;
     margin-top: 7rem;
-    margin-bottom: 9rem;
+    margin-bottom: 20rem;
     background-image: url(../IMG/bg-quotes.png);
     background-position: top 0 left 8%; }
-    /* line 573, ../SCSS/style.scss */
+    /* line 659, ../SCSS/style.scss */
     .container-feedback .container-feedback-grid {
       width: 100%;
+      height: 900px;
       padding: 0;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-areas: "feedback1" "feedback2" "feedback3";
       grid-gap: 3rem;
       text-align: center; }
-      /* line 585, ../SCSS/style.scss */
-      .container-feedback .container-feedback-grid .profile-1 img,
-      .container-feedback .container-feedback-grid .profile-2 img,
-      .container-feedback .container-feedback-grid .profile-3 img {
+      /* line 672, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .profile-1 .img-front,
+      .container-feedback .container-feedback-grid .profile-2 .img-front,
+      .container-feedback .container-feedback-grid .profile-3 .img-front {
         float: none; }
+      /* line 676, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .img-back {
+        max-width: 150px;
+        height: 150px;
+        border-radius: 50%; }
 
-  /* line 594, ../SCSS/style.scss */
+  /* line 686, ../SCSS/style.scss */
   .container-bottom {
     padding: 1rem;
     width: 100%;
-    height: auto;
     position: relative;
     box-shadow: none; }
-    /* line 601, ../SCSS/style.scss */
+    /* line 692, ../SCSS/style.scss */
     .container-bottom h1 {
       margin-bottom: 0.5rem; }
-    /* line 605, ../SCSS/style.scss */
+    /* line 696, ../SCSS/style.scss */
     .container-bottom .container-bottom-grid {
       width: 100%;
       height: auto;
+      padding: 5rem 3rem;
       border-radius: 10px;
       background-color: #1c2431;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-areas: "text1" "text1" "email" "btn";
+      grid-template-areas: "text1" "email" "btn";
       grid-gap: 0;
       text-align: center; }
-      /* line 620, ../SCSS/style.scss */
+      /* line 711, ../SCSS/style.scss */
       .container-bottom .container-bottom-grid .text-bottom {
-        margin-top: 2rem;
         grid-area: text1;
-        text-align: center; }
-      /* line 626, ../SCSS/style.scss */
+        text-align: center;
+        margin-top: 0; }
+      /* line 717, ../SCSS/style.scss */
       .container-bottom .container-bottom-grid .email-box {
         grid-area: email;
         justify-self: center; }
-        /* line 630, ../SCSS/style.scss */
+        /* line 721, ../SCSS/style.scss */
         .container-bottom .container-bottom-grid .email-box input {
-          margin-top: 2rem;
           width: 330px;
           height: 50px;
           text-align: center; }
-      /* line 638, ../SCSS/style.scss */
+      /* line 728, ../SCSS/style.scss */
       .container-bottom .container-bottom-grid .btn-bottom {
         grid-area: btn;
         justify-self: center; }
-        /* line 642, ../SCSS/style.scss */
+        /* line 732, ../SCSS/style.scss */
         .container-bottom .container-bottom-grid .btn-bottom a {
           padding: 1rem 6rem;
           border-radius: 2rem; }
 
-  /* line 652, ../SCSS/style.scss */
+  /* line 742, ../SCSS/style.scss */
   .container-footer {
     width: 100%;
     height: auto;
-    margin-top: 3rem; }
-    /* line 657, ../SCSS/style.scss */
+    margin-top: 10rem; }
+    /* line 747, ../SCSS/style.scss */
     .container-footer .container-footer-grid {
       width: 100%;
       height: auto;
@@ -541,350 +625,101 @@ body {
       grid-template-columns: 1fr;
       grid-template-areas: "logo" "address" "tel" "about" "social";
       grid-gap: 2rem; }
-      /* line 671, ../SCSS/style.scss */
+      /* line 761, ../SCSS/style.scss */
       .container-footer .container-footer-grid .logo-footer {
         grid-area: logo;
         justify-self: center; }
-        /* line 675, ../SCSS/style.scss */
+        /* line 765, ../SCSS/style.scss */
         .container-footer .container-footer-grid .logo-footer img {
           width: 100%; }
-      /* line 680, ../SCSS/style.scss */
+      /* line 770, ../SCSS/style.scss */
       .container-footer .container-footer-grid .address {
         justify-self: center; }
-      /* line 684, ../SCSS/style.scss */
+      /* line 774, ../SCSS/style.scss */
       .container-footer .container-footer-grid .tel {
         grid-area: tel;
         justify-self: center; }
-        /* line 687, ../SCSS/style.scss */
+        /* line 777, ../SCSS/style.scss */
         .container-footer .container-footer-grid .tel P {
           margin-left: 1.5rem; }
-        /* line 691, ../SCSS/style.scss */
+        /* line 781, ../SCSS/style.scss */
         .container-footer .container-footer-grid .tel .tel-me {
           display: flex; }
-        /* line 694, ../SCSS/style.scss */
+        /* line 784, ../SCSS/style.scss */
         .container-footer .container-footer-grid .tel .email {
           display: flex;
           margin-top: 1.5rem; }
-      /* line 699, ../SCSS/style.scss */
+      /* line 789, ../SCSS/style.scss */
       .container-footer .container-footer-grid .about {
         grid-area: about;
         justify-self: center;
         display: grid;
         grid-template-columns: repeat(2, 1fr); }
-        /* line 706, ../SCSS/style.scss */
+        /* line 796, ../SCSS/style.scss */
         .container-footer .container-footer-grid .about a {
           text-decoration: none; }
-        /* line 709, ../SCSS/style.scss */
+        /* line 799, ../SCSS/style.scss */
         .container-footer .container-footer-grid .about P {
           color: white;
           text-align: left;
           margin-bottom: 0.8em; }
-        /* line 715, ../SCSS/style.scss */
+        /* line 805, ../SCSS/style.scss */
         .container-footer .container-footer-grid .about .about-us {
           margin-top: 2.5rem; }
-          /* line 717, ../SCSS/style.scss */
+          /* line 807, ../SCSS/style.scss */
           .container-footer .container-footer-grid .about .about-us P {
             margin-left: 0; }
-        /* line 721, ../SCSS/style.scss */
+        /* line 811, ../SCSS/style.scss */
         .container-footer .container-footer-grid .about .contact-us {
           margin-top: 2.5rem; }
-      /* line 725, ../SCSS/style.scss */
+      /* line 815, ../SCSS/style.scss */
       .container-footer .container-footer-grid .social-logo {
         margin-top: 1.5rem;
         grid-area: social;
         justify-self: center;
         font-size: 160%; } }
-@media (max-width: 768px) {
-  /* line 736, ../SCSS/style.scss */
-  .container {
-    max-width: 768px; }
-
-  /* line 739, ../SCSS/style.scss */
-  .container-nav {
-    padding: 2rem; }
-    /* line 742, ../SCSS/style.scss */
-    .container-nav .container-nav-flex img {
-      width: 6rem; }
-    /* line 746, ../SCSS/style.scss */
-    .container-nav .container-nav-flex ul li {
-      font-family: "Raleway", sans-serif;
-      margin-left: 1rem; }
-
-  /* line 754, ../SCSS/style.scss */
-  .container-header {
-    width: 100%;
-    padding: 2rem;
-    background-image: url(../IMG/bg-curvy-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: bottom; }
-    /* line 761, ../SCSS/style.scss */
-    .container-header h1 {
-      font-size: 2rem;
-      margin-top: 1.5rem; }
-    /* line 765, ../SCSS/style.scss */
-    .container-header p {
-      margin-top: 2rem;
-      font-size: 1rem; }
-    /* line 769, ../SCSS/style.scss */
-    .container-header img {
-      width: 100%; }
-
-  /* line 775, ../SCSS/style.scss */
-  .container-content {
-    width: 100%;
-    height: auto;
-    margin-top: 8rem;
-    padding: 2rem; }
-    /* line 781, ../SCSS/style.scss */
-    .container-content .container-content-grid {
-      width: 100%;
-      height: auto;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas: "Access" "security" "real" "store";
-      grid-gap: 6rem; }
-      /* line 793, ../SCSS/style.scss */
-      .container-content .container-content-grid .content-Access {
-        grid-area: Access;
-        padding-right: 0;
-        justify-self: center; }
-      /* line 798, ../SCSS/style.scss */
-      .container-content .container-content-grid .content-security {
-        grid-area: security;
-        padding-left: 0;
-        justify-self: center; }
-      /* line 803, ../SCSS/style.scss */
-      .container-content .container-content-grid .content-real {
-        grid-area: real;
-        padding-right: 0;
-        justify-self: center; }
-      /* line 808, ../SCSS/style.scss */
-      .container-content .container-content-grid .content-store {
-        grid-area: store;
-        padding-left: 0;
-        justify-self: center; }
-
-  /* line 818, ../SCSS/style.scss */
-  .header-middle {
-    width: 100%;
-    height: auto;
-    margin-top: 10rem;
-    padding: 2rem; }
-    /* line 824, ../SCSS/style.scss */
-    .header-middle h1 {
-      font-size: 2.5rem;
-      margin-top: 1.5rem; }
-    /* line 828, ../SCSS/style.scss */
-    .header-middle p {
-      margin-top: 2rem;
-      font-size: 1rem; }
-    /* line 833, ../SCSS/style.scss */
-    .header-middle .header-middle-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      text-align: center;
-      grid-gap: 4rem; }
-      /* line 839, ../SCSS/style.scss */
-      .header-middle .header-middle-grid img {
-        width: 100%;
-        justify-self: end; }
-      /* line 845, ../SCSS/style.scss */
-      .header-middle .header-middle-grid .header-middle-text .see-how {
-        justify-content: center;
-        display: flex;
-        margin-top: 1.5rem; }
-        /* line 850, ../SCSS/style.scss */
-        .header-middle .header-middle-grid .header-middle-text .see-how img {
-          width: 1rem; }
-      /* line 856, ../SCSS/style.scss */
-      .header-middle .header-middle-grid .header-middle-text .see-how:hover img {
-        width: 1rem; }
-
-  /* line 866, ../SCSS/style.scss */
-  .container-feedback {
-    width: 100%;
-    height: auto;
-    padding: 2rem;
-    margin-top: 7rem;
-    margin-bottom: 9rem;
-    background-image: url(../IMG/bg-quotes.png);
-    background-position: top 0 left 8%; }
-    /* line 876, ../SCSS/style.scss */
-    .container-feedback .container-feedback-grid {
-      width: 100%;
-      padding: 0;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas: "feedback1" "feedback2" "feedback3";
-      grid-gap: 3rem;
-      text-align: center; }
-      /* line 888, ../SCSS/style.scss */
-      .container-feedback .container-feedback-grid .profile-1 img,
-      .container-feedback .container-feedback-grid .profile-2 img,
-      .container-feedback .container-feedback-grid .profile-3 img {
-        float: none; }
-
-  /* line 897, ../SCSS/style.scss */
-  .container-bottom {
-    padding: 1rem;
-    width: 100%;
-    height: auto;
-    position: relative;
-    box-shadow: none; }
-    /* line 904, ../SCSS/style.scss */
-    .container-bottom h1 {
-      margin-bottom: 0.5rem; }
-    /* line 908, ../SCSS/style.scss */
-    .container-bottom .container-bottom-grid {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      background-color: #1c2431;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas: "text1" "text1" "email" "btn";
-      grid-gap: 0;
-      text-align: center; }
-      /* line 923, ../SCSS/style.scss */
-      .container-bottom .container-bottom-grid .text-bottom {
-        margin-top: 2rem;
-        grid-area: text1;
-        text-align: center; }
-      /* line 929, ../SCSS/style.scss */
-      .container-bottom .container-bottom-grid .email-box {
-        grid-area: email;
-        justify-self: center; }
-        /* line 933, ../SCSS/style.scss */
-        .container-bottom .container-bottom-grid .email-box input {
-          margin-top: 2rem;
-          width: 330px;
-          height: 50px;
-          text-align: center; }
-      /* line 941, ../SCSS/style.scss */
-      .container-bottom .container-bottom-grid .btn-bottom {
-        grid-area: btn;
-        justify-self: center; }
-        /* line 945, ../SCSS/style.scss */
-        .container-bottom .container-bottom-grid .btn-bottom a {
-          padding: 1rem 6rem;
-          border-radius: 2rem; }
-
-  /* line 955, ../SCSS/style.scss */
-  .container-footer {
-    width: 100%;
-    height: auto;
-    margin-top: 3rem; }
-    /* line 960, ../SCSS/style.scss */
-    .container-footer .container-footer-grid {
-      width: 100%;
-      height: auto;
-      padding: 5rem 2rem 2rem 2rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas: "logo" "address" "tel" "about" "social";
-      grid-gap: 2rem; }
-      /* line 974, ../SCSS/style.scss */
-      .container-footer .container-footer-grid .logo-footer {
-        grid-area: logo;
-        justify-self: center; }
-        /* line 978, ../SCSS/style.scss */
-        .container-footer .container-footer-grid .logo-footer img {
-          width: 100%; }
-      /* line 983, ../SCSS/style.scss */
-      .container-footer .container-footer-grid .address {
-        justify-self: center; }
-      /* line 987, ../SCSS/style.scss */
-      .container-footer .container-footer-grid .tel {
-        grid-area: tel;
-        justify-self: center; }
-        /* line 990, ../SCSS/style.scss */
-        .container-footer .container-footer-grid .tel P {
-          margin-left: 1.5rem; }
-        /* line 994, ../SCSS/style.scss */
-        .container-footer .container-footer-grid .tel .tel-me {
-          display: flex; }
-        /* line 997, ../SCSS/style.scss */
-        .container-footer .container-footer-grid .tel .email {
-          display: flex;
-          margin-top: 1.5rem; }
-      /* line 1002, ../SCSS/style.scss */
-      .container-footer .container-footer-grid .about {
-        grid-area: about;
-        justify-self: center;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); }
-        /* line 1009, ../SCSS/style.scss */
-        .container-footer .container-footer-grid .about a {
-          text-decoration: none; }
-        /* line 1012, ../SCSS/style.scss */
-        .container-footer .container-footer-grid .about P {
-          color: white;
-          text-align: left;
-          margin-bottom: 0.8em; }
-        /* line 1018, ../SCSS/style.scss */
-        .container-footer .container-footer-grid .about .about-us {
-          margin-top: 2.5rem; }
-          /* line 1020, ../SCSS/style.scss */
-          .container-footer .container-footer-grid .about .about-us P {
-            margin-left: 0; }
-        /* line 1024, ../SCSS/style.scss */
-        .container-footer .container-footer-grid .about .contact-us {
-          margin-top: 2.5rem; }
-      /* line 1028, ../SCSS/style.scss */
-      .container-footer .container-footer-grid .social-logo {
-        margin-top: 1.5rem;
-        grid-area: social;
-        justify-self: center;
-        font-size: 160%; }
-
-  /* line 1039, ../SCSS/style.scss */
-  .coded {
-    padding: 1rem 1; }
-    /* line 1042, ../SCSS/style.scss */
-    .coded p {
-      font-size: 10px; } }
 @media (max-width: 480px) {
-  /* line 1051, ../SCSS/style.scss */
+  /* line 828, ../SCSS/style.scss */
   .container {
     max-width: 480px; }
 
-  /* line 1054, ../SCSS/style.scss */
+  /* line 831, ../SCSS/style.scss */
   .container-nav {
     padding: 2rem; }
-    /* line 1057, ../SCSS/style.scss */
+    /* line 834, ../SCSS/style.scss */
     .container-nav .container-nav-flex img {
       width: 6rem; }
-    /* line 1061, ../SCSS/style.scss */
+    /* line 838, ../SCSS/style.scss */
     .container-nav .container-nav-flex ul li {
       font-family: "Raleway", sans-serif;
       margin-left: 1rem; }
 
-  /* line 1069, ../SCSS/style.scss */
+  /* line 846, ../SCSS/style.scss */
   .container-header {
     width: 100%;
     padding: 2rem;
     background-image: url(../IMG/bg-curvy-mobile.svg);
     background-repeat: no-repeat;
     background-position: bottom; }
-    /* line 1076, ../SCSS/style.scss */
+    /* line 853, ../SCSS/style.scss */
     .container-header h1 {
       font-size: 2rem;
       margin-top: 1.5rem; }
-    /* line 1080, ../SCSS/style.scss */
+    /* line 857, ../SCSS/style.scss */
     .container-header p {
       margin-top: 2rem;
       font-size: 1rem; }
-    /* line 1084, ../SCSS/style.scss */
+    /* line 861, ../SCSS/style.scss */
     .container-header img {
       width: 100%; }
 
-  /* line 1090, ../SCSS/style.scss */
+  /* line 867, ../SCSS/style.scss */
   .container-content {
     width: 100%;
     height: auto;
     margin-top: 8rem;
     padding: 2rem; }
-    /* line 1096, ../SCSS/style.scss */
+    /* line 873, ../SCSS/style.scss */
     .container-content .container-content-grid {
       width: 100%;
       height: auto;
@@ -892,90 +727,96 @@ body {
       grid-template-columns: 1fr;
       grid-template-areas: "Access" "security" "real" "store";
       grid-gap: 6rem; }
-      /* line 1108, ../SCSS/style.scss */
+      /* line 885, ../SCSS/style.scss */
       .container-content .container-content-grid .content-Access {
         grid-area: Access;
         padding-right: 0; }
-      /* line 1112, ../SCSS/style.scss */
+      /* line 889, ../SCSS/style.scss */
       .container-content .container-content-grid .content-security {
         grid-area: security;
         padding-left: 0; }
-      /* line 1116, ../SCSS/style.scss */
+      /* line 893, ../SCSS/style.scss */
       .container-content .container-content-grid .content-real {
         grid-area: real;
         padding-right: 0; }
-      /* line 1120, ../SCSS/style.scss */
+      /* line 897, ../SCSS/style.scss */
       .container-content .container-content-grid .content-store {
         grid-area: store;
         padding-left: 0; }
 
-  /* line 1129, ../SCSS/style.scss */
+  /* line 906, ../SCSS/style.scss */
   .header-middle {
     width: 100%;
     height: auto;
     margin-top: 10rem;
     padding: 2rem; }
-    /* line 1135, ../SCSS/style.scss */
+    /* line 912, ../SCSS/style.scss */
     .header-middle h1 {
       font-size: 2.5rem;
       margin-top: 1.5rem; }
-    /* line 1139, ../SCSS/style.scss */
+    /* line 916, ../SCSS/style.scss */
     .header-middle p {
       margin-top: 2rem;
       font-size: 1rem; }
-    /* line 1144, ../SCSS/style.scss */
+    /* line 921, ../SCSS/style.scss */
     .header-middle .header-middle-grid {
       display: grid;
       grid-template-columns: 1fr;
       text-align: left;
       grid-gap: 4rem; }
-      /* line 1150, ../SCSS/style.scss */
+      /* line 927, ../SCSS/style.scss */
       .header-middle .header-middle-grid img {
         width: 100%;
         justify-self: end; }
-      /* line 1156, ../SCSS/style.scss */
+      /* line 933, ../SCSS/style.scss */
       .header-middle .header-middle-grid .header-middle-text .see-how {
         display: flex;
         margin-top: 1.5rem; }
-        /* line 1160, ../SCSS/style.scss */
+        /* line 937, ../SCSS/style.scss */
         .header-middle .header-middle-grid .header-middle-text .see-how img {
           width: 1rem; }
-      /* line 1166, ../SCSS/style.scss */
+      /* line 943, ../SCSS/style.scss */
       .header-middle .header-middle-grid .header-middle-text .see-how:hover img {
         width: 1rem; }
 
-  /* line 1176, ../SCSS/style.scss */
+  /* line 953, ../SCSS/style.scss */
   .container-feedback {
     width: 100%;
     height: auto;
     padding: 2rem;
     margin-top: 7rem;
-    margin-bottom: 9rem;
+    margin-bottom: 20rem;
     background-image: url(../IMG/bg-quotes.png);
     background-position: top 0 left 8%; }
-    /* line 1186, ../SCSS/style.scss */
+    /* line 963, ../SCSS/style.scss */
     .container-feedback .container-feedback-grid {
       width: 100%;
+      height: 1000px;
       padding: 0;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-areas: "feedback1" "feedback2" "feedback3";
       grid-gap: 3rem;
-      text-align: left; }
+      text-align: center; }
+      /* line 973, ../SCSS/style.scss */
+      .container-feedback .container-feedback-grid .img-back {
+        max-width: 150px;
+        height: 150px; }
 
-  /* line 1199, ../SCSS/style.scss */
+  /* line 982, ../SCSS/style.scss */
   .container-bottom {
-    padding: 1rem;
+    padding: 0;
     width: 100%;
     height: auto;
     position: relative;
     box-shadow: none; }
-    /* line 1206, ../SCSS/style.scss */
+    /* line 989, ../SCSS/style.scss */
     .container-bottom h1 {
       margin-bottom: 0.5rem; }
-    /* line 1210, ../SCSS/style.scss */
+    /* line 993, ../SCSS/style.scss */
     .container-bottom .container-bottom-grid {
       width: 100%;
+      padding: 5rem 1rem;
       height: auto;
       border-radius: 10px;
       background-color: #1c2431;
@@ -984,36 +825,36 @@ body {
       grid-template-areas: "text1" "text1" "email" "btn";
       grid-gap: 0;
       text-align: center; }
-      /* line 1225, ../SCSS/style.scss */
+      /* line 1009, ../SCSS/style.scss */
       .container-bottom .container-bottom-grid .text-bottom {
         margin-top: 2rem;
         grid-area: text1;
         text-align: center; }
-      /* line 1231, ../SCSS/style.scss */
+      /* line 1015, ../SCSS/style.scss */
       .container-bottom .container-bottom-grid .email-box {
         grid-area: email;
         justify-self: center; }
-        /* line 1235, ../SCSS/style.scss */
+        /* line 1019, ../SCSS/style.scss */
         .container-bottom .container-bottom-grid .email-box input {
           margin-top: 2rem;
           width: 330px;
           height: 50px;
           text-align: center; }
-      /* line 1243, ../SCSS/style.scss */
+      /* line 1027, ../SCSS/style.scss */
       .container-bottom .container-bottom-grid .btn-bottom {
         grid-area: btn;
         justify-self: center; }
-        /* line 1247, ../SCSS/style.scss */
+        /* line 1031, ../SCSS/style.scss */
         .container-bottom .container-bottom-grid .btn-bottom a {
           padding: 1rem 6rem;
           border-radius: 2rem; }
 
-  /* line 1257, ../SCSS/style.scss */
+  /* line 1041, ../SCSS/style.scss */
   .container-footer {
     width: 100%;
     height: auto;
     margin-top: 3rem; }
-    /* line 1262, ../SCSS/style.scss */
+    /* line 1046, ../SCSS/style.scss */
     .container-footer .container-footer-grid {
       width: 100%;
       height: auto;
@@ -1022,58 +863,59 @@ body {
       grid-template-columns: 1fr;
       grid-template-areas: "logo" "address" "tel" "about" "social";
       grid-gap: 2rem; }
-      /* line 1276, ../SCSS/style.scss */
+      /* line 1060, ../SCSS/style.scss */
       .container-footer .container-footer-grid .logo-footer {
         grid-area: logo;
         justify-self: flex-start; }
-        /* line 1280, ../SCSS/style.scss */
+        /* line 1064, ../SCSS/style.scss */
         .container-footer .container-footer-grid .logo-footer img {
           width: 100%; }
-      /* line 1285, ../SCSS/style.scss */
+      /* line 1069, ../SCSS/style.scss */
       .container-footer .container-footer-grid .tel {
         grid-area: tel;
         justify-self: flex-start; }
-        /* line 1288, ../SCSS/style.scss */
+        /* line 1072, ../SCSS/style.scss */
         .container-footer .container-footer-grid .tel P {
           margin-left: 1.5rem; }
-        /* line 1292, ../SCSS/style.scss */
+        /* line 1076, ../SCSS/style.scss */
         .container-footer .container-footer-grid .tel .tel-me {
           display: flex; }
-        /* line 1295, ../SCSS/style.scss */
+        /* line 1079, ../SCSS/style.scss */
         .container-footer .container-footer-grid .tel .email {
           display: flex;
           margin-top: 1.5rem; }
-      /* line 1300, ../SCSS/style.scss */
+      /* line 1084, ../SCSS/style.scss */
       .container-footer .container-footer-grid .about {
         grid-area: about;
         justify-self: flex-start;
         display: grid;
         grid-template-columns: 1fr; }
-        /* line 1307, ../SCSS/style.scss */
+        /* line 1091, ../SCSS/style.scss */
         .container-footer .container-footer-grid .about a {
           text-decoration: none; }
-        /* line 1310, ../SCSS/style.scss */
+        /* line 1094, ../SCSS/style.scss */
         .container-footer .container-footer-grid .about P {
           color: white;
           text-align: left;
-          margin-bottom: 0.8em; }
-        /* line 1316, ../SCSS/style.scss */
+          margin-bottom: 0.8em;
+          margin-left: 0; }
+        /* line 1101, ../SCSS/style.scss */
         .container-footer .container-footer-grid .about .about-us {
           margin-top: 2.5rem; }
-        /* line 1319, ../SCSS/style.scss */
+        /* line 1104, ../SCSS/style.scss */
         .container-footer .container-footer-grid .about .contact-us {
           margin-top: 2.5rem; }
-      /* line 1323, ../SCSS/style.scss */
+      /* line 1108, ../SCSS/style.scss */
       .container-footer .container-footer-grid .social-logo {
         margin-top: 1.5rem;
         grid-area: social;
         justify-self: center;
         font-size: 160%; }
 
-  /* line 1334, ../SCSS/style.scss */
+  /* line 1119, ../SCSS/style.scss */
   .coded {
     padding: 1rem 1; }
-    /* line 1337, ../SCSS/style.scss */
+    /* line 1122, ../SCSS/style.scss */
     .coded p {
       font-size: 10px; } }
 
